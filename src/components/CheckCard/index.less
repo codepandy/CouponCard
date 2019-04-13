@@ -1,0 +1,48 @@
+.container{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    display: flex;
+    width: 185px;
+    height: 64px;
+    position: relative;
+    margin: 10px;
+}
+.containerChecked{
+    .container;
+    border-color: #009BFF;
+}
+.title{
+    font-size:20px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+}
+.content{
+    font-size:12px;
+    font-weight:400;
+    color:rgba(255,142,52,1);
+}
+.trigon{
+    width: 0;
+    height: 0;
+    border: 11px;
+    border-bottom-right-radius: 5px;
+    border-style:solid;
+    border-color:transparent #009BFF #009BFF transparent;
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+.check{
+    width: 10px;
+    height: 8px;
+    position: absolute;
+    background-image: require('src/components/CheckCard/images/check@2x.png') no-repeat 10px 8px;
+    right:1px;
+    bottom:2px;
+    z-index: 20;
+}
